@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio | Home</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <nav class="navbar">
+      <h1 class="logo"><a href="/" >MyPortfolio</a></h1>
+      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero fade-in">
+    <h2>Hello, I'm <span>Elizabeth</span></h2>
+    <p>A passionate Web Developer creating modern & responsive websites.</p>
+    <a href="about.html" class="btn">Learn More</a>
+  </section>
+
+  <!-- Slider -->
+  <section class="slider fade-in">
+    <div class="slides">
+      <div class="slide"><img src="images/project1.jpeg" alt="Project 1" height="500" width=""></div>
+      <div class="slide"><img src="images/project2.jpeg" alt="Project 2" height="500" width=""></div>
+      <div class="slide"><img src="images/project3.jpeg" alt="Project 3" height="500" width=""></div>
+    </div>
+    <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+    <button class="next" onclick="changeSlide(1)">&#10095;</button>
+  </section>
+
+  <!-- Projects -->
+  <main>
+    <section class="projects fade-in">
+      <h2>Featured Projects</h2>
+      <div class="project-grid">
+        <article class="project-card">
+          <img src="images/project1.jpeg" alt="Project 1">
+          <h3>Landing Page</h3>
+          <p>A responsive landing page built with HTML, CSS, and JavaScript.</p>
+        </article>
+        <article class="project-card">
+          <img src="images/project2.jpeg" alt="Project 2">
+          <h3>E-commerce Template</h3>
+          <p>A modern online store with user-friendly design & interactions.</p>
+        </article>
+        <article class="project-card">
+          <img src="images/project3.jpeg" alt="Project 3">
+          <h3>Portfolio Dashboard</h3>
+          <p>A portfolio dashboard created using Flexbox & Grid layouts.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 MyPortfolio | Designed with ❤️</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
